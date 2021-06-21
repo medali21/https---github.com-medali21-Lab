@@ -1,0 +1,11 @@
+<div>
+    <h1 matDialogTitle>{{title}}</h1>
+    <mat-dialog-content>{{message}}</mat-dialog-content>
+    <mat-dialog-actions>
+        <button mat-raised-button color="success" mat-dialog-close>
+            <span>{{cancelButtonLabel}}</span>
+        </button>                <button mat-raised-button color="warn" [mat-dialog-close]="true">
+            <span>{{confirmButtonLabel}}</span>
+        </button>
+    </mat-dialog-actions>
+</div>

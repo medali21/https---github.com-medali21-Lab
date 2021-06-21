@@ -1,0 +1,37 @@
+
+{{isFormInEditMode()?'Edit Member':'creation neuveau membre'}}
+<form [formGroup]="form" *ngIf="!!form" (ngSubmit)="onSubmit()" >
+    <p>
+        <mat-form-field appearance="legacy">
+            <input matInput placeholder="CIN" formControlName="cin">
+        </mat-form-field>
+    </p>
+    <p>
+        <mat-form-field appearance="legacy">
+            <input matInput placeholder="Name" formControlName="Name">
+        </mat-form-field>
+    </p>
+    <p>
+        <mat-form-field appearance="legacy">
+            <input matInput placeholder="CV" formControlName="Cv">
+        </mat-form-field>
+    </p>
+    <p>
+        <mat-form-field appearance="legacy">
+            <input matInput placeholder="Type" formControlName="Type">
+        </mat-form-field>
+    </p>
+    <mat-form-field appearance="fill">
+        <mat-label>outils</mat-label>
+        <mat-select [(ngModel)]="selectedValue" name="Tools"formControlName="Tools">
+            <mat-option *ngFor="let Tools of toppingList" [value]="Tools.id">
+                {{Tools.Date}}   {{Tools.Source}}
+            </mat-option>
+        </mat-select>
+    </mat-form-field>
+
+   
+    <br>
+    <br>
+    <button mat-stroked-button color="primary" type="submit">Ajouter</button>
+</form>

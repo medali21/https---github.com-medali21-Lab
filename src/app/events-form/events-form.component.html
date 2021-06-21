@@ -1,0 +1,29 @@
+{{isFormInEditMode()?'Edit event':'Ajouter neuveau evenement'}}
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+
+    <p>
+        <mat-form-field appearance="legacy">
+            <input matInput placeholder="Titre" formControlName="Titre">
+        </mat-form-field>
+    </p>
+    <p>
+        <mat-form-field appearance="legacy">
+            <input matInput placeholder="Date" formControlName="Date">
+        </mat-form-field>
+    </p>
+    <p>
+        <mat-form-field appearance="legacy">
+            <input matInput placeholder="Lieu" formControlName="Lieu">
+        </mat-form-field>
+    </p>
+    <p>
+        <mat-form-field appearance="fill">
+            <mat-label>noms membres</mat-label>
+            <mat-select [(ngModel)]="selectedValue" name="Members" formControlName="Members" multiple >
+              <mat-option *ngFor="let Member of toppingList" [value]="Member.Name">{{Member.Name}}</mat-option>
+            </mat-select>
+        </mat-form-field>
+        
+    </p>
+    <button mat-stroked-button color="primary" type="submit">Ajouter</button>
+</form>

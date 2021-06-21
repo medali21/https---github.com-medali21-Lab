@@ -1,0 +1,41 @@
+{{IsFormInEditMode()?'Edit tools':'creation neuveau tools'}}
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <p>
+        <mat-form-field class="example-full-width">
+            <input matInput placeholder="titre" formControlName="titre">
+        </mat-form-field>
+    </p>
+    <p>
+        <mat-form-field class="example-full-width">
+            <input matInput placeholder="type" formControlName="type">
+        </mat-form-field>
+    </p>
+    <p>
+        <mat-form-field class="example-full-width">
+            <input matInput placeholder="dateApparition" formControlName="dateApparition">
+        </mat-form-field>
+    </p>
+    <p>
+        <mat-form-field class="example-full-width">
+            <input matInput placeholder="lien" formControlName="lien">
+        </mat-form-field>
+    </p>
+    <p>
+        <mat-form-field class="example-full-width">
+            <input matInput placeholder="sourcePdf" formControlName="sourcePdf">
+        </mat-form-field>
+    </p>
+    <p>
+  
+        <mat-form-field class="example-full-width">
+            <mat-select [(ngModel)]="selectedValue" name="member"formControlName="auteur"matInput placeholder="auteur">
+        <mat-option *ngFor="let member of Members" [value]="member.Name">
+          {{member.Name}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    </p>
+    <button mat-stroked-button color="primary" type="submit">Ajouter</button>
+   
+</form>

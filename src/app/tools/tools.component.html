@@ -1,0 +1,16 @@
+
+{{isFormInEditMode()?'Edit tools':'Creation neuveau tools'}}
+<form [formGroup]="form" *ngIf="!!form" (ngSubmit)="onSubmit()">
+    <p>
+        <mat-form-field appearance="legacy">
+             <input matInput placeholder="Date" formControlName="Date">
+        </mat-form-field>
+    </p>
+    <p>
+        <mat-form-field appearance="legacy">
+            <input matInput placeholder="Source" formControlName="Source">
+        </mat-form-field>
+    </p>
+   
+    <button mat-stroked-button color="primary" type="submit">Ajouter</button>
+</form>

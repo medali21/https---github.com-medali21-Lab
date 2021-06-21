@@ -1,0 +1,86 @@
+{
+  "members" :[
+    {
+        "id":"1",
+        "cin":"11082979",
+        "Name":"Imen",
+        "Type":"Teacher",
+        "cv":"https://www.cdc.gov/polio/stop/pdf/stop-cv-format.pdf",
+        "CreatedDate":"12/02/2021",
+        "Tools":"110"
+    },
+    {
+        "id":"2",
+        "cin":"11030692",
+        "Name":"Med_Ali",
+        "Type":"Student",
+        "cv":"https://www.cdc.gov/polio/stop/pdf/stop-cv-format.pdf",
+        "CreatedDate":"23/05/2021",
+        "Tools":"021"
+      },
+      {
+        "id":"3",
+        "cin":"11398678",
+        "Name":"Ayman",
+        "Type":"Teacher",
+        "cv":"https://www.cdc.gov/polio/stop/pdf/stop-cv-format.pdf",
+        "CreatedDate":"23/05/2021",
+        "Tools":"013"
+      }
+
+],
+    "articles":[
+      {
+        "id":1,
+        "titre": "match_amical",
+        "type": "FOOT",
+        "dateApparition": "23/05/2021",
+        "lien" : "2021-10-02T09:09:00Z",
+        "sourcePdf" : "https://googel.com",
+        "auteur":""
+      },
+      {
+        "id":2,
+        "titre": "Wedding",
+        "type": "wed",
+        "dateApparition": "23/05/2021",
+        "lien" : "2021-07-02T09:09:00Z",
+        "sourcePdf" : "https://googel.com",
+        "auteur":""
+      },
+      {
+        "id":3,
+        "titre": "festival",
+        "type": "dunes",
+        "dateApparition": "23/05/2021",
+        "lien" : "2021-11-02T09:09:00Z",
+        "sourcePdf" : "https://googel.com",
+        "auteur":""
+      }
+    ],
+    "tools":[
+      {
+        "id":110,
+        "Date": "05/06/2021",
+        "Source": "liste participant"
+        
+      },
+      {
+        "id":21,
+        "Date": "05/06/2021",
+        "Source": "liste des joeurs"
+        
+      }
+    ],
+      
+      "evenement":[
+        {
+          "id":1,
+          "Titre": "ceromonie",
+          "Date": "21/06/2021",
+          "Lieu":"sfax",
+          "Members":"Med_Ali"
+          
+        }]
+
+}
